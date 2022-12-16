@@ -1,0 +1,43 @@
+appId: com.flurntech.learner
+---
+- clearState
+- launchApp
+
+- assertVisible: "Next"
+- assertVisible: "Skip"
+- assertVisible: "Discover Trusted Teachers around your neighborhood"
+- tapOn: "Next"
+- assertVisible: "Try classes risk free with 30 day refunds"
+- assertVisible: "Next"
+- tapOn: "Next"
+- assertVisible: "Get frequent updates, track progress and outcomes"
+- tapOn: "Next"
+- assertVisible: "Find your next teacher on Flurn now!"
+- assertVisible: "Done"
+- assertNotVisible: "Skip"
+- tapOn: "Done"
+
+# - assertVisible: "“Titan” Would Like to Send You Notifications"
+# - assertVisible: "Don’t Allow"
+# - assertVisible: "Allow"
+# - tapOn: "Allow"
+# - assertNotVisible: "“Titan” Would Like to Send You Notifications"
+
+- assertVisible: "Login / Register"
+- tapOn: "Get OTP"
+- assertVisible: "Phone number is required"
+
+- tapOn:
+    point: "59%,60%"
+#- inputText: "8888888888"
+- inputRandomNumber:
+    length: 10
+- tapOn: "Clear text"
+- tapOn: "Get OTP"
+- assertVisible: "Phone number is required"
+- tapOn:
+    point: "59%,60%"
+#- inputText: "8888888888"
+- inputRandomNumber:
+    length: 10
+- tapOn: "Get OTP"
